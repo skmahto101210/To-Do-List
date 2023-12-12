@@ -1,20 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-/* body{ */
-/* } */
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
-    background:linear-gradient(135deg, #4157d0 0%,#c750bf 100%);
+    background: linear-gradient(135deg, #4157d0 0%, #c750bf 100%);
     padding: 10px;
 }
 
-.todo_box{
+.todo_box {
     width: 500px;
     max-width: 540px;
     background: #fff;
@@ -22,18 +20,21 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-.todo_box h2{
+
+.todo_box h2 {
     color: rgb(100, 97, 97);
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-size: 40px;
 }
-.todo_box img{
+
+.todo_box img {
     width: 40px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,9 +43,10 @@
     border-radius: 50px;
     margin-bottom: 20px;
 }
-.row input{
+
+.row input {
     width: 100%;
-    flex:1;
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
@@ -52,18 +54,19 @@
     font-weight: 15px;
     font-size: 20px;
 }
-.row button{
+
+.row button {
     border: none;
     outline: none;
     font-size: large;
     padding: 17px 50px;
-    background-color: rgba(245, 90, 63, 0.984) ;
+    background-color: rgba(245, 90, 63, 0.984);
     color: #fff;
     cursor: pointer;
     border-radius: 40px;
 }
 
-ul li{
+ul li {
     /* border: 2px solid black; */
     list-style: none;
     font-size: 17px;
@@ -75,7 +78,7 @@ ul li{
     position: relative;
 }
 
-ul li::before{
+ul li::before {
     content: '';
     position: absolute;
     height: 25px;
@@ -88,16 +91,16 @@ ul li::before{
     left: 8px;
 }
 
-ul li.checked{
+ul li.checked {
     color: #6f6d6d;
     text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image: url(images/checked.png);
 }
 
-li span{
+li span {
     position: absolute;
     right: 0;
     top: 2px;
@@ -110,7 +113,8 @@ li span{
     border-radius: 50%;
     line-height: 40px;
 }
-li span:hover{
+
+li span:hover {
     background: #abaaaa26;
     color: #222222bd;
 }
