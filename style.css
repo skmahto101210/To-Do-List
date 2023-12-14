@@ -65,7 +65,7 @@
     cursor: pointer;
     border-radius: 40px;
 }
-@media  (min-width: 400px) and (max-width: 531px) {
+@media  (max-width: 531px) {
     .todo_box{
         width: 400px;
     }
