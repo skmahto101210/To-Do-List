@@ -65,7 +65,28 @@
     cursor: pointer;
     border-radius: 40px;
 }
-
+@media  (min-width: 400px) and (max-width: 531px) {
+    .todo_box{
+        width: 400px;
+    }
+    .todo_box h2{
+        justify-content: center;
+    }
+    .row button{
+        padding: 17px 29px;
+    }
+}
+@media  (max-width: 361px) {
+    .todo_box{
+        width: 331px;
+    }
+    .todo_box h2{
+        justify-content: center;
+    }
+    .row button{
+        padding: 12px 20px;
+    }
+}
 ul li {
     /* border: 2px solid black; */
     list-style: none;
