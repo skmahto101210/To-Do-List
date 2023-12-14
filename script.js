@@ -1,6 +1,18 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.querySelector("#list-container");
+const ulBox = document.querySelector('ul');
 
+function checkUlHeight(){
+    if(ulBox.offsetHeight>=(window.innerHeight)/2)
+    {
+        ulBox.style.height=(window.innerHeight)/2+"px";
+        ulBox.style.overflowY = "scroll"
+    }
+    if(ulBox.scrollHeight==ulBox.offsetHeight){
+        ulBox.style.height=null;
+        ulBox.style.overflowY=null;
+    }
+}
 const addTask = ()=> {
     if (inputBox.value === "") {
         alert("you must enter task!");
@@ -13,6 +25,7 @@ const addTask = ()=> {
         li.appendChild(span);
     }
     inputBox.value = "";
+    checkUlHeight();
     saveTask()
 }
 inputBox.addEventListener('keypress',(e)=>{
@@ -25,8 +38,9 @@ listContainer.addEventListener("click", (event) => {
     }
     else if (event.target.tagName === "SPAN") {
         event.target.parentElement.remove();
+        checkUlHeight();
     }
-    saveTask()
+    saveTask();
 }, false);
 
 function saveTask() {

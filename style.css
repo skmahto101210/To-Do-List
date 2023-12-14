@@ -76,7 +76,7 @@
         padding: 17px 29px;
     }
 }
-@media  (max-width: 361px) {
+@media  (max-width: 429px) {
     .todo_box{
         width: 331px;
     }
@@ -87,16 +87,44 @@
         padding: 12px 20px;
     }
 }
+@media  (max-width: 362px) {
+    .todo_box{
+        width: 298px;
+    }
+    .todo_box h2{
+        font-size: 30px;
+        justify-content: center;
+    }
+    .todo_box img{
+        width: 30px;
+    }
+    .row button{
+        padding: 12px 20px;
+    }
+}
+@media  (max-width: 330px) {
+    .todo_box{
+        width: 263px;
+    }
+    .todo_box h2{
+        font-size: 30px;
+        justify-content: center;
+    }
+    .todo_box img{
+        width: 30px;
+    }
+    .row button{
+        padding: 12px 20px;
+    }
+}
 ul li {
-    /* border: 2px solid black; */
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    /* text-wrap:wrap; */
+    padding: 12px 33px 12px 50px;
     user-select: none;
     cursor: pointer;
-    /* border: 2px solid black; */
     position: relative;
+    overflow-wrap: break-word ;
 }
 
 ul li::before {
